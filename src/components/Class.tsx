@@ -8,7 +8,7 @@ type Props = {
 
 export default function Class({ name, image, description }: Props) {
   return (
-    <div className='relative mx-5 inline-block h-[380px] w-[450px]'>
+    <div className='relative mx-4 inline-block h-[338px] w-[450px]'>
       <div className={overlayStyles}>
         <p className='text-2xl'>{name}</p>
         <p className='mt-5'>{description}</p>

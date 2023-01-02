@@ -120,18 +120,18 @@ export default function OurClasses({ setSelectedPage }: Props) {
         </motion.div>
       </motion.div>
 
-      <div
-        ref={classesRef}
-        className='relative mt-10 h-[355px] w-full overflow-y-hidden overflow-x-scroll scrollbar-hide'
-      >
+      <div className='relative mt-10'>
         <ArrowLeftCircleIcon
           onClick={() => handleScroll('left')}
           className={`${
             !isScrolled && 'hidden'
-          } absolute left-8 top-0 bottom-0 z-50 my-auto h-12 w-12 cursor-pointer`}
+          } absolute left-4 top-0 bottom-0 z-50 my-auto h-12 w-12 cursor-pointer`}
           color='#dfcccc'
         />
-        <div className='whitespace-nowrap'>
+        <div
+          ref={classesRef}
+          className='h-[338px] w-full overflow-y-hidden overflow-x-scroll whitespace-nowrap scrollbar-hide'
+        >
           {ourClasses.map(
             ({ name, image, description }: ClassType, index: number) => (
               <Class
