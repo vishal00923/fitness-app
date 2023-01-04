@@ -81,7 +81,7 @@ export default function Navbar({
 
       {!isAboveMediumScreens && isMenuToggled && (
         <div
-          className='fixed right-0 bottom-0 z-20 h-full w-[300px]
+          className='fixed right-0 bottom-0 z-50 h-full w-[300px]
          bg-primary-100 drop-shadow-xl'
         >
           <div className='flex justify-end p-12'>

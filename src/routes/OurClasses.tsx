@@ -12,9 +12,9 @@ import Image3 from '@/assets/image3.png';
 import Image4 from '@/assets/image4.png';
 import Image5 from '@/assets/image5.png';
 import Image6 from '@/assets/image6.png';
-import Heading from '@/components/Heading';
 
 import Class from '@/components/Class';
+import Heading from '@/components/Heading';
 
 const ourClasses: Array<ClassType> = [
   {
@@ -125,7 +125,7 @@ export default function OurClasses({ setSelectedPage }: Props) {
           onClick={() => handleScroll('left')}
           className={`${
             !isScrolled && 'hidden'
-          } absolute left-4 top-0 bottom-0 z-50 my-auto h-12 w-12 cursor-pointer`}
+          } absolute left-4 top-0 bottom-0 z-30 my-auto h-12 w-12 cursor-pointer`}
           color='#dfcccc'
         />
         <div
@@ -145,7 +145,7 @@ export default function OurClasses({ setSelectedPage }: Props) {
         </div>
         <ArrowRightCircleIcon
           onClick={() => handleScroll('right')}
-          className={`absolute right-4 top-0 bottom-0 z-50 my-auto h-12 w-12 cursor-pointer`}
+          className={`absolute right-4 top-0 bottom-0 z-30 my-auto h-12 w-12 cursor-pointer`}
           color='#dfcccc'
         />
       </div>
